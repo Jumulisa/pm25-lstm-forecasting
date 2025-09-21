@@ -1,0 +1,8 @@
+run_id,seq_len,hidden_layers,dropout,batch_size,lr,epochs,optimizer,features_notes,val_RMSE,comments,csv,minutes
+r001,24,LSTM(64)->LSTM(32),0.2,128,0.001,12,Adam,base + cyclical time,78.59406374191852,baseline,,
+r002,48,LSTM(64)->LSTM(32),0.2,128,0.001,14,Adam,base+cyclical time,75.1832072236713,,,
+r003,48,LSTM(64)->LSTM(32),0.2,128,0.0005,23,Adam,base+cyclical time,75.13146680777302,,submission_r003.csv,10.56
+r004,48,LSTM(64)->LSTM(32),0.2,64,0.0005,15,Adam,base+cyclical time,74.80561724291665,,submission_r004.csv,8.46
+r005,48,LSTM(128)->LSTM(64),0.2,64,0.0005,13,Adam,base+cyclical time,74.01177060103346,,submission_r005.csv,14.84
+r006,72,LSTM(128)->LSTM(64),0.2,64,0.0005,13,Adam,base+cyclical time,70.78934832259371,,submission_r006.csv,339.73
+r007,48,GRU(64)->GRU(32),0.2,64,0.0005,19,Adam,base+cyclical time,71.38238113104312,,submission_r007.csv,11.01
